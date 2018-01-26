@@ -43,6 +43,5 @@ class Scraper
         student[:bio] = profile.css('div.bio-consent.content-holder div.description-holder p').text
       end
     student
-    binding.pry
   end
 end
