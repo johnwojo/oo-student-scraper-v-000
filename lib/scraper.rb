@@ -26,7 +26,7 @@ class Scraper
     profile = Nokogiri::HTML(html)
     student = {}
     links = profile.css(".social-icon-container a").each do |link|
-      link_link = link.attribute("href").value
+      link = link.attribute("href").value
       if link.include?('twitter')
         student[:twitter] = link
       elsif link.include?('linkedin')
