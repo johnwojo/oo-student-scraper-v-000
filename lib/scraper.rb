@@ -29,9 +29,9 @@ class Scraper
       if link.include?('twitter')
         student[:twitter] = link
       elsif link.include?('linkedin')
-          student[:twitter] = link
+          student[:linkedin] = link
       elsif link.include?('github')
-            student[:twitter] = link
+            student[:github] = link
   end
 
 end
