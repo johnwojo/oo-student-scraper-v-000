@@ -7,6 +7,15 @@ class Student
   def initialize(student_hash)
     @name = student_hash[:name]
     @location = student_hash[:location]
+    @twitter = student_hash[:name]
+    @linkedin = student_hash[:name]
+    @github = student_hash[:name]
+    @blog = student_hash[:name]
+    @profile_quote = student_hash[:name]
+    @bio = student_hash[:name]
+    @profile_url = student_hash[:name]
+
+
 
   end
 
