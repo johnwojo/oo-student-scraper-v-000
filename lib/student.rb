@@ -11,7 +11,7 @@ class Student
     @linkedin = student_hash[:linkedin]
     @github = student_hash[:github]
     @blog = student_hash[:blog]
-    @profile_quote = student_hash[:name]
+    @profile_quote = student_hash[:profile_quote]
     @bio = student_hash[:name]
     @profile_url = student_hash[:name]
 
