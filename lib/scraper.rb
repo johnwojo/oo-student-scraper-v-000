@@ -39,5 +39,6 @@ class Scraper
     student[:profile_quote] = profile.css('.profile-quote').text
     student[:bio] = profile.css('.bio-content .description-holder p').text
     student
+    binding.pry
   end
 end
