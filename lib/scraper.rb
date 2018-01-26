@@ -30,7 +30,7 @@ class Scraper
         student[:twitter] = link_attribute
       elsif link.include?('linkedin')
         student[:linkedin] = link_attribute
-      elsif link_attribute.include?('github')
+      elsif link.include?('github')
           student[:github] = link_attribute
       else student[:blog] = link_attribute
       end
