@@ -25,7 +25,7 @@ class Scraper
     html = open('fixtures/student-site/index.html')
     profile = Nokogiri::HTML(html)
     links = profile.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value}
-    
+    links.each do 
   end
 
 end
