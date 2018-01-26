@@ -27,11 +27,11 @@ class Scraper
     student = {}
     links = profile.css(".social-icon-container a").each do |link|
       link_attribute = link.attribute("href").value
-      if link.include?('twitter')
+      if link_attribute.include?('twitter')
         student[:twitter] = link
-      elsif link.include?('linkedin')
+      elsif link_attribute.include?('linkedin')
         student[:linkedin] = link
-      elsif link.include?('github')
+      elsif link_attribute.include?('github')
           student[:github] = link
       else student[:blog] = link
       end
