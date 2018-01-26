@@ -28,7 +28,7 @@ class Scraper
       link = social.attribute("href").value
       if link.include?('twitter')
         student[:twitter] = link_attribute
-      elsif link_attribute.include?('linkedin')
+      elsif link.include?('linkedin')
         student[:linkedin] = link_attribute
       elsif link_attribute.include?('github')
           student[:github] = link_attribute
