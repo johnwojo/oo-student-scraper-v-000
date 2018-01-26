@@ -23,7 +23,8 @@ class Scraper
 
    def self.scrape_profile_page(profile_url)
     html = open('fixtures/student-site/index.html')
-    doc = Nokogiri::HTML(html)
+    profile = Nokogiri::HTML(html)
+    doc.css('')
   end
 
 end
