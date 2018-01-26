@@ -31,8 +31,8 @@ class Scraper
       elsif link.include?('linkedin')
         student[:linkedin] = link_attribute
       elsif link.include?('github')
-          student[:github] = link_attribute
-      else student[:blog] = link_attribute
+          student[:github] = link
+      else student[:blog] = link
       end
     end
     student[:profile_quote] = profile.css('.profile-quote').text
