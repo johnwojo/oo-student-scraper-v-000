@@ -19,6 +19,11 @@ class Scraper
    school
  end
 
+=======
+    html = open('fixtures/student-site/index.html')
+    doc = Nokogiri::HTML(html)
+  end
+>>>>>>> 5cdb613f0e6b0e7eb20fbd2380d30c5814a394de
 
   def self.scrape_profile_page(profile_url)
 
