@@ -26,7 +26,7 @@ class Scraper
     student = {}
     profile.css(".social-icon-container a").each do |social|  # This line takes each of the links in the social container and calls them a "link."
       link = social.attribute("href").value
-      if link.include?('twitter')
+      if link_attribute.include?('twitter')
         student[:twitter] = link_attribute
       elsif link_attribute.include?('linkedin')
         student[:linkedin] = link_attribute
