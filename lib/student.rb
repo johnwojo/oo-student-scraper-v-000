@@ -27,6 +27,7 @@ class Student
     attributes_hash.each do |key, value|
       self.send("#{key}",value)
     end
+    self
   end
 
   def self.all
